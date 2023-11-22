@@ -4,11 +4,10 @@ const SpotifyTokenComponent = () => {
   const [tokenInfo, setTokenInfo] = useState(null);
 
   useEffect(() => {
-    // Your Spotify API client ID and client secret
     const client_id = '895cc6bc8d9441319664f71c4e6e618c';
     const client_secret = '6e4ccaa5b53e48218ee11945ddcc8b74';
 
-    // Authorization request options
+    // Authorization request
     const authOptions = {
       method: 'POST',
       headers: {
@@ -28,7 +27,7 @@ const SpotifyTokenComponent = () => {
       .catch(error => {
         console.error('Error getting Spotify access token:', error);
       });
-  }, []); // Empty dependency array to run the effect only once on component mount
+  }, []);
 
   return (
     <div>
