@@ -8,9 +8,9 @@ function Player() {
         <iframe
             title="Spotify Embed: Recommendation Playlist "
             src={`https://open.spotify.com/embed/playlist/${playlistId}?utm_source=generator&theme=0`}
-            width="100%"
+            width="80%"
             height="100%"
-            style={{ minHeight: '500px' }}
+            style={{ minHeight: '750px' }}
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
         />
