@@ -7,6 +7,8 @@ import './App.css';
 import Player from './components/Player';
 import TopSongsComponent from './components/TopSongsComponent';
 import NavBar from './components/NavBar';
+import Logo from './components/Logo';
+import Footer from './components/Footer';
 
 function App() {
   // define states
@@ -187,6 +189,7 @@ console.log(token)
 
     <div className="App" style={{minHeight: '100vh'}}>
       <div className="title">
+        <Logo/>
         <NavBar/>
         <SearchBar token={token} updateTracklist={updateTracklist} />
       </div>
@@ -208,8 +211,9 @@ console.log(token)
         :
         ''
       }
-      <Player/>
+      {/* <Player/> */}
      {/* <TopSongsComponent tokens= {token}/> */}
+     <Footer/>
     </div>
   );
 }

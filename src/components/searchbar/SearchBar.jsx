@@ -47,7 +47,7 @@ const SearchBar = ({ token, updateTracklist }) => {
       <div className={styles.searchBar}>
         <form onSubmit={submitHandler}>
             <input onChange={(e) => setSearchTerm(e.target.value)} value={searchTerm} name='searchTerm' placeholder="Search....."/>
-            <button type="submit">SEARCH</button>
+            <button type="submit" className="bg-indigo-700">SEARCH</button>
         </form>
     </div>
   )

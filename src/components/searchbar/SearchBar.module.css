@@ -8,6 +8,7 @@ form {
     align-content: center;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .searchBar a {
@@ -22,7 +23,7 @@ button {
     padding: 1% 50px;
     color: white;
     border: none;
-    
+    text-align: center;
     box-shadow: 0 4px 2px 2px #00000054;
 }
 p{
@@ -40,11 +41,12 @@ button:hover {
 
 .searchBar input {
     padding: 10px 50px;
+    width: 60%;
     border: none;
     border-radius: 10px;
     text-align: center;
     
-    box-shadow: 0 4px 2px 2px #00000054;
+    box-shadow: 0 2px 2px 2px #00000054;
 }
 
 .searchBar input:focus-visible {
