@@ -12,14 +12,14 @@
     font-weight: bold;
     cursor: pointer;
     padding: 13px 16px !important;
-    background-color: #1db954;
+    background-color: #6a00ff;
     height: fit-content;
 }
 
 .track button:hover {
-    background-color: #1ed760 !important;
+    background-color: #4d2c91 !important;
     box-shadow: none;
-    border: 3px solid #1db954;
+    border: 3px solid #4d2c91;
 }
 
 .info {

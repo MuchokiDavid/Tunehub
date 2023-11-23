@@ -6,6 +6,7 @@ import { useState, useEffect, useCallback } from 'react';
 import './App.css';
 import Player from './components/Player';
 import TopSongsComponent from './components/TopSongsComponent';
+import NavBar from './components/NavBar';
 
 function App() {
   // define states
@@ -186,7 +187,7 @@ console.log(token)
 
     <div className="App" style={{minHeight: '100vh'}}>
       <div className="title">
-        <h1>Tune<span>Hub</span></h1>
+        <NavBar/>
         <SearchBar token={token} updateTracklist={updateTracklist} />
       </div>
       {token ? (
@@ -208,7 +209,7 @@ console.log(token)
         ''
       }
       <Player/>
-     <TopSongsComponent tokens= {token}/>
+     {/* <TopSongsComponent tokens= {token}/> */}
     </div>
   );
 }

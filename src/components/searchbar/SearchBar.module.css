@@ -17,7 +17,7 @@ form {
 
 button {
     margin-top: 1%;
-    background-color: #1db954;
+    background-color: #6a00ff;
     border-radius: 100px;
     padding: 1% 50px;
     color: white;
@@ -31,11 +31,11 @@ p{
 }
 
 button:hover {
-    background-color: #1ed760;
+    background-color: #4d2c91;
     cursor: pointer;
     
     box-shadow: none;
-    border: 3px solid #1db954;
+    border: 3px solid #4d2c91;
 }
 
 .searchBar input {

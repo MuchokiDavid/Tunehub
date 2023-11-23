@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const token = 'BQAf6THQkbPrCQmEyo23ud5WQLF3wRja6A6ZadsWAak13CNQRtbuL4rtUxabPs436dPyfnnBYYSfKbZwXb0_eTiCLgqn7POn8wRd3JyaRXb9DaY2iFM';
+const token = 'BQBdHBx512QFndVDIUhwKvPG63tlHIYK6WzSFoX3cAYRxDCXyTnTaqUzN30d_aARMTMXop0iaTG7IoDAquMNeAOsf5vx0JaZb6zKz3TC2GG6H3T1UC4';
 
 async function fetchWebApi(endpoint, method, body) {
   const res = await fetch(`https://api.spotify.com/${endpoint}`, {
@@ -19,7 +19,6 @@ const topTracksIds = [
   '6vy5gmpM2yuLAhDRtGOtPw',
   '0qZbRZcJw0Hj9oCDc7yaW3',
   '2hcohLIysMxofYziluXCoX',
-  
 ];
 
 async function getRecommendations() {

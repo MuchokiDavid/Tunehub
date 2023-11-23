@@ -1,5 +1,5 @@
 .tracklist {
-    background-color: #1ed75f;
+    background-color: #2d2b55;
     flex-grow: 1;
     flex-basis: 100%;
     border-radius: 10px;
@@ -19,11 +19,11 @@
 }
 
 .tracklist button {
-    background-color: #1db954;
+    background-color: #6a00ff;
     padding: 13px 16px;
     height: fit-content;
 }
 
 .tracklist button:hover {
-    background-color: #1ed760;
+    background-color: #4d2c91
 }

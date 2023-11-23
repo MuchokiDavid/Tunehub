@@ -1,5 +1,5 @@
 .playlist {
-    background-color: #1ed75f;
+    background-color: #2d2b55;
     flex-grow: 1;
     flex-basis: 100%;
     border-radius: 10px;
@@ -39,6 +39,9 @@
 
 .playlist button {
     margin-bottom: 10px;
+}
+button{
+    background-color: #6a00ff;
 }
 
 
