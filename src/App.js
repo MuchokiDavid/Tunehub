@@ -12,7 +12,6 @@ function App() {
   const [tracklist, setTracklist] = useState([]);
   const [playlist, setPlaylist] = useState([]);
   const [playlistName, setPlaylistName] = useState('');
-  // const [user, setUser] = useState(null);
 
   const [tokenInfo, setTokenInfo] = useState(null);
 
@@ -60,7 +59,6 @@ function App() {
   const updateTracklist = (array) => {
     setTracklist(array);
   }
-  // console.log(tracklist)
 
   // function to add tracks to playlist, will be called from Track.js
   const addToPlaylist = (newTrack) => {
@@ -183,7 +181,7 @@ function App() {
       throw error;
     }
   }
-
+console.log(token)
   return (
 
     <div className="App" style={{minHeight: '100vh'}}>
@@ -210,7 +208,7 @@ function App() {
         ''
       }
       <Player/>
-     <TopSongsComponent/>
+     <TopSongsComponent tokens= {token}/>
     </div>
   );
 }

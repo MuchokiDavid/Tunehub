@@ -10,7 +10,7 @@ function Player() {
             src={`https://open.spotify.com/embed/playlist/${playlistId}?utm_source=generator&theme=0`}
             width="80%"
             height="100%"
-            style={{ minHeight: '750px' }}
+            style={{ minHeight: '750px'}}
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
         />
