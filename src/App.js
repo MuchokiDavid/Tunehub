@@ -187,7 +187,7 @@ function App() {
 console.log(token)
   return (
 
-    <div className="App" style={{minHeight: '100vh'}}>
+    <div className="App bg-gray-100" style={{minHeight: '100vh'}}>
       <div className="title">
         <Logo/>
         <NavBar/>
@@ -195,7 +195,7 @@ console.log(token)
       </div>
       {token ? (
         <div className='flex'>
-          <Tracklist data={tracklist} addToPlaylist={addToPlaylist} saveTrack={saveTrack} />
+          <Tracklist data={tracklist} addToPlaylist={addToPlaylist} saveTrack={saveTrack}/>
           <Playlist
             className='flexItem'
             playlist={playlist}

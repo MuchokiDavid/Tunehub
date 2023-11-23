@@ -11,7 +11,7 @@ const Footer = () => {
         <NavLink to="/player" style={linkStyles} activeStyle={activeLinkStyles}>
           About
         </NavLink>
-        <NavLink to="/charts" style={linkStyles} activeStyle={activeLinkStyles}>
+        <NavLink to="/chart" style={linkStyles} activeStyle={activeLinkStyles}>
           Contact
         </NavLink>
       </nav>

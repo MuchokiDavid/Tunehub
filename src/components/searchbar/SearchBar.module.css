@@ -44,7 +44,7 @@ button:hover {
     width: 60%;
     border: none;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     
     box-shadow: 0 2px 2px 2px #00000054;
 }
