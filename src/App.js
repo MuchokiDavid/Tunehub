@@ -3,7 +3,9 @@ import Playlist from './components/playlist/Playlist';
 import SearchBar from './components/searchbar/SearchBar';
 import Tracklist from './components/tracklist/Tracklist';
 import { useState, useEffect, useCallback } from 'react';
-
+import './App.css';
+import Player from './components/Player';
+import TopSongsComponent from './components/TopSongsComponent';
 
 function App() {
   // define states
@@ -183,6 +185,7 @@ function App() {
   }
 
   return (
+
     <div className="App" style={{minHeight: '100vh'}}>
       <div className="title">
         <h1>Tune<span>Hub</span></h1>
@@ -200,14 +203,14 @@ function App() {
             playlistName={playlistName}
             currentUser={currentUser}
             createPlaylist={createPlaylist}
-            token={token} />
-            
+            token={token} />   
         </div>
       )
         :
         ''
       }
-      
+      <Player/>
+     <TopSongsComponent/>
     </div>
   );
 }
