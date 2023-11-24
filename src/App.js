@@ -4,11 +4,14 @@ import SearchBar from './components/searchbar/SearchBar';
 import Tracklist from './components/tracklist/Tracklist';
 import { useState, useEffect, useCallback } from 'react';
 import './App.css';
-import Player from './components/Player';
-import TopSongsComponent from './components/TopSongsComponent';
+// import Player from './components/Player';
+// import TopSongsComponent from './components/TopSongsComponent';
 import NavBar from './components/NavBar';
-import Logo from './components/Logo';
 import Footer from './components/Footer';
+import { Route, Routes, Switch } from "react-router-dom";
+import Play from './pages/Play';
+import Charts from './pages/Charts';
+import Logo from './components/Logo';
 
 function App() {
   // define states
@@ -187,10 +190,22 @@ function App() {
 console.log(token)
   return (
 
-    <div className="App bg-gray-100" style={{minHeight: '100vh'}}>
+    <div className="App bg-gray-100 md:container md:mx-auto" style={{minHeight: '100vh'}}>
       <div className="title">
         <Logo/>
         <NavBar/>
+        {/* <Switch>
+          <Routes>
+        <Route exact path="/">
+        </Route>
+        <Route exact path="/player">
+          <Play/>
+        </Route>
+        <Route exact path="/chart">
+          <Charts/>
+        </Route>
+        </Routes>
+      </Switch> */}
         <SearchBar token={token} updateTracklist={updateTracklist} />
       </div>
       {token ? (

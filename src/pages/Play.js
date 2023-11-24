@@ -4,7 +4,7 @@ import Player from '../components/Player'
 import Footer from '../components/Footer'
 import Logo from '../components/Logo'
 
-function Player() {
+function Play() {
   return (
     <div>
         <Logo/>
@@ -15,4 +15,4 @@ function Player() {
   )
 }
 
-export default Player
+export default Play
