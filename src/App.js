@@ -205,6 +205,7 @@ console.log(token)
         </Route>
         </Routes>
       </Switch> */}
+      <p className='text-black mt-5 font-extrabold text-3xl	'>Search for Spotify audio, save to playlist and Listen to demo</p>
         <SearchBar token={token} updateTracklist={updateTracklist} />
       </div>
       {token ? (
