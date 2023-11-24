@@ -226,7 +226,7 @@ console.log(token)
         ''
       }
       {/* <Player/> */}
-     <TopSongsComponent/>
+     {/* <TopSongsComponent/> */}
      <Footer/>
     </div>
   );
