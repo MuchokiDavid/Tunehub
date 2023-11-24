@@ -5,7 +5,7 @@ import Tracklist from './components/tracklist/Tracklist';
 import { useState, useEffect, useCallback } from 'react';
 import './App.css';
 // import Player from './components/Player';
-// import TopSongsComponent from './components/TopSongsComponent';
+import TopSongsComponent from './components/TopSongsComponent';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { Route, Routes, Switch } from "react-router-dom";
@@ -59,7 +59,6 @@ function App() {
   }, []);
 
   const token = tokenInfo?.access_token;
-  //" BQBS9EqezkUG9ugndAJOmy0Tq6Jw6_x1vnBOsR7GnfWG7k7G8urm0_Ad9wmuyf1Ndy9stkPWVTuC1MsEs_umO1r0-oRiWfDiwW1nl_aaCtgP7sy4ccM"
   
   // function to update tracklist, will be called by SearchBar.js after getting results
   const updateTracklist = (array) => {
@@ -227,7 +226,7 @@ console.log(token)
         ''
       }
       {/* <Player/> */}
-     {/* <TopSongsComponent tokens= {token}/> */}
+     <TopSongsComponent/>
      <Footer/>
     </div>
   );

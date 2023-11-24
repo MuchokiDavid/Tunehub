@@ -33,7 +33,7 @@ const Playlist = ({ playlist, removeFromPlaylist, setPlaylistName, playlistName,
           removeFromPlaylist={removeFromPlaylist}
           origin='playlist' />
       )}
-      <button type="submit" className="bg-indigo-700 mt-4" onClick={clickHandler}>Save to Spotify</button>
+      <button type="submit" className="bg-indigo-700 mt-4" onClick={clickHandler}>Save</button>
     </div>
   )
 }

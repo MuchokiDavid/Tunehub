@@ -9,10 +9,10 @@ const Footer = () => {
           Home
         </NavLink>
         <NavLink to="/player" style={linkStyles} activeStyle={activeLinkStyles}>
-          About
+          Player
         </NavLink>
         <NavLink to="/chart" style={linkStyles} activeStyle={activeLinkStyles}>
-          Contact
+          Chart
         </NavLink>
       </nav>
       <p style={copyrightStyles}>© 2023 Tunehub</p>
