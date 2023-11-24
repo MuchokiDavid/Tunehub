@@ -8,7 +8,6 @@ function Charts() {
   return (
     <div>
         <TopSongsComponent/>
-        <Footer/>
     </div>
   )
 }

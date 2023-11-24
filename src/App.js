@@ -2,17 +2,17 @@ import './App.css';
 import Playlist from './components/playlist/Playlist';
 import SearchBar from './components/searchbar/SearchBar';
 import Tracklist from './components/tracklist/Tracklist';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect} from 'react';
 import './App.css';
 // import Player from './components/Player';
-import TopSongsComponent from './components/TopSongsComponent';
+// import TopSongsComponent from './components/TopSongsComponent';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { Route, Routes} from "react-router-dom";
 import Play from './pages/Play';
 import Charts from './pages/Charts';
 import Logo from './components/Logo';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 
 function App() {
   // define states
@@ -105,10 +105,7 @@ function App() {
     }
   }
 
-  // Define the currentUser function using useCallback
-    const fetchCurrentUser  = useCallback(async () => {
 
-    }, []);   
  
   // Function to create a playlist (assuming you have the user's ID)
   const createPlaylist = async (userId, playlistName, token) => {
@@ -199,7 +196,7 @@ console.log(token)
         <Route path="/player" element= {<Play/>}/>
         <Route path="/chart" element= {<Charts/>}/>
         </Routes>
-      <p className='text-black mt-5 font-extrabold text-3xl	'>Search for Spotify audio, save to playlist and Preview the audio</p>
+      <p className='text-black mt-5 font-extrabold text-3xl	'>Search for Spotify audio, Save to playlist and Preview</p>
         <SearchBar token={token} updateTracklist={updateTracklist} />
       </div>
       {token ? (

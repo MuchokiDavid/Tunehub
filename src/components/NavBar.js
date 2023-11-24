@@ -27,10 +27,10 @@ const activeLinkStyles = {
       Home
     </NavLink>
     <NavLink to="/player" exact style={linkStyles} activeStyle={activeLinkStyles}>
-      Player
+      Playlist
     </NavLink>
     <NavLink to="/chart" exact style={linkStyles} activeStyle={activeLinkStyles}>
-      Chart
+      Charts
     </NavLink>
   </div>
     );
