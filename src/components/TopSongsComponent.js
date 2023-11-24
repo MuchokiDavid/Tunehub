@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AudioPlayer from './AudioPlayer';
 
 const TopSongsComponent = () => {
-  const token = 'BQBuYXWItOzlYL7vWLliT6gXIYCXWr6jHT0SHwREEw6OmK5KQT-F1vq4gp2ouRm0AZewnvnquSfi6KuVs9YFbfjZdCHuKLHwR2uiGZZJLgP4RO-fvag';
+  const token = 'BQDzE80fpT12sNSU6gUQnkbyLNutGA5mCBUwvyCdAVNbRIqU4oSpKsh0aYTuUNExRDrtxKFMp0tV1sffUmaibP64oF4_oXunH1B3x0EjISk2v19iLAw';
 
   async function fetchWebApi(endpoint, method, body) {
     const res = await fetch(`https://api.spotify.com/${endpoint}`, {

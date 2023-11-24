@@ -7,8 +7,6 @@ import Logo from '../components/Logo'
 function Play() {
   return (
     <div>
-        <Logo/>
-        <NavBar/>
         <Player/>
         <Footer/>
     </div>

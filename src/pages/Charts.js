@@ -7,8 +7,6 @@ import Logo from '../components/Logo'
 function Charts() {
   return (
     <div>
-        <Logo/>
-        <NavBar/>
         <TopSongsComponent/>
         <Footer/>
     </div>

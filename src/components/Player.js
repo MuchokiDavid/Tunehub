@@ -3,7 +3,7 @@ import React from 'react'
 function Player() {
     const playlistId = '7JD8OUPh1SqHVzlHyAgRZC';
   return (
-    <div>
+    <div className='content-center'>
         <h3>Listen to music here</h3>
         <iframe
             title="Spotify Embed: Recommendation Playlist "

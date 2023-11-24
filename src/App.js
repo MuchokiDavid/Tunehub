@@ -8,10 +8,11 @@ import './App.css';
 import TopSongsComponent from './components/TopSongsComponent';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import { Route, Routes, Switch } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Play from './pages/Play';
 import Charts from './pages/Charts';
 import Logo from './components/Logo';
+import Home from './pages/Home';
 
 function App() {
   // define states
@@ -193,19 +194,12 @@ console.log(token)
       <div className="title">
         <Logo/>
         <NavBar/>
-        {/* <Switch>
           <Routes>
-        <Route exact path="/">
-        </Route>
-        <Route exact path="/player">
-          <Play/>
-        </Route>
-        <Route exact path="/chart">
-          <Charts/>
-        </Route>
+        <Route exact path="/" element= ""/>
+        <Route path="/player" element= {<Play/>}/>
+        <Route path="/chart" element= {<Charts/>}/>
         </Routes>
-      </Switch> */}
-      <p className='text-black mt-5 font-extrabold text-3xl	'>Search for Spotify audio, save to playlist and Listen to demo</p>
+      <p className='text-black mt-5 font-extrabold text-3xl	'>Search for Spotify audio, save to playlist and Preview the audio</p>
         <SearchBar token={token} updateTracklist={updateTracklist} />
       </div>
       {token ? (
