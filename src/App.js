@@ -8,7 +8,7 @@ import './App.css';
 // import TopSongsComponent from './components/TopSongsComponent';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import { Route, Routes} from "react-router-dom";
+import { Route, Routes, useLocation} from "react-router-dom";
 import Play from './pages/Play';
 import Charts from './pages/Charts';
 import Logo from './components/Logo';
@@ -21,6 +21,7 @@ function App() {
   const [playlistName, setPlaylistName] = useState('');
 
   const [tokenInfo, setTokenInfo] = useState(null);
+  const location = useLocation()
 
   useEffect(() => {
     const client_id = '895cc6bc8d9441319664f71c4e6e618c';
@@ -187,23 +188,27 @@ function App() {
 console.log(token)
   return (
 
-    <div className="App bg-gray-100 md:container md:mx-auto" style={{minHeight: '100vh'}}>
+    <div className="App bg-gray-100 md:container md:mx-auto" style={{ minHeight: '100vh' }}>
       <div className="title">
-        <Logo/>
-        <NavBar/>
-          <Routes>
-        <Route exact path="/" element= ""/>
-        <Route path="/player" element= {<Play/>}/>
-        <Route path="/chart" element= {<Charts/>}/>
+        <Logo />
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element="" />
+          <Route path="/player" element={<Play />} />
+          <Route path="/chart" element={<Charts />} />
         </Routes>
-      <p className='text-black mt-5 font-extrabold text-3xl	'>Search for audio, save to playlist and preview</p>
-        <SearchBar token={token} updateTracklist={updateTracklist} />
+        {location.pathname !== '/player' && location.pathname !== '/chart' && (
+          <div>
+            <p className="text-black mt-5 font-extrabold text-3xl">Search for Audio, Save to Playlist and Preview</p>
+            <SearchBar token={token} updateTracklist={updateTracklist} />
+          </div>
+        )}
       </div>
-      {token ? (
-        <div className='flex'>
-          <Tracklist data={tracklist} addToPlaylist={addToPlaylist} saveTrack={saveTrack}/>
+      {token && location.pathname !== '/player' && location.pathname !== '/chart' && (
+        <div className="flex">
+          <Tracklist data={tracklist} addToPlaylist={addToPlaylist} saveTrack={saveTrack} />
           <Playlist
-            className='flexItem'
+            className="flexItem"
             playlist={playlist}
             data={tracklist}
             removeFromPlaylist={removeFromPlaylist}
@@ -211,13 +216,11 @@ console.log(token)
             playlistName={playlistName}
             currentUser={currentUser}
             createPlaylist={createPlaylist}
-            token={token} />   
+            token={token}
+          />
         </div>
-      )
-        :
-        ''
-      }
-     <Footer/>
+      )}
+      <Footer/>
     </div>
   );
 }

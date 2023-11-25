@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer style={footerStyles}>
+    <footer style={footerStyles} className='mt-4'>
       <nav>
         <NavLink to="/" style={linkStyles} activeStyle={activeLinkStyles} exact>
           Home
