@@ -196,7 +196,7 @@ console.log(token)
         <Route path="/player" element= {<Play/>}/>
         <Route path="/chart" element= {<Charts/>}/>
         </Routes>
-      <p className='text-black mt-5 font-extrabold text-3xl	'>Search for audio, Save to playlist and Preview</p>
+      <p className='text-black mt-5 font-extrabold text-3xl	'>Search for audio, save to playlist and preview</p>
         <SearchBar token={token} updateTracklist={updateTracklist} />
       </div>
       {token ? (
