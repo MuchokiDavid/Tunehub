@@ -196,7 +196,7 @@ console.log(token)
         <Route path="/player" element= {<Play/>}/>
         <Route path="/chart" element= {<Charts/>}/>
         </Routes>
-      <p className='text-black mt-5 font-extrabold text-3xl	'>Search for Spotify audio, Save to playlist and Preview</p>
+      <p className='text-black mt-5 font-extrabold text-3xl	'>Search for audio, Save to playlist and Preview</p>
         <SearchBar token={token} updateTracklist={updateTracklist} />
       </div>
       {token ? (
@@ -217,8 +217,6 @@ console.log(token)
         :
         ''
       }
-      {/* <Player/> */}
-     {/* <TopSongsComponent/> */}
      <Footer/>
     </div>
   );
