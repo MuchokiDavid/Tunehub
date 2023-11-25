@@ -185,7 +185,7 @@ function App() {
       throw error;
     }
   }
-console.log(token)
+// console.log(token)
   return (
 
     <div className="App bg-gray-100 md:container md:mx-auto" style={{ minHeight: '100vh' }}>
