@@ -199,7 +199,7 @@ function App() {
         </Routes>
         {location.pathname !== '/player' && location.pathname !== '/chart' && (
           <div>
-            <p className="text-black mt-5 font-extrabold text-3xl">Search for Audio, Save to Playlist and Preview</p>
+            <p className="text-black mt-5 font-extrabold text-3xl">Search Audio,Preview and Save to Playlist  </p>
             <SearchBar token={token} updateTracklist={updateTracklist} />
           </div>
         )}
